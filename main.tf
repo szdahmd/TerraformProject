@@ -8,10 +8,10 @@ resource "aws_instance" "RHEL-Server" {
   instance_type = "t2.micro"
   key_name      = "SazidAkeypair"
   tags = {
-    Name = "RHEL-Server"
+    Name = "RHEL-Two"
   }
   root_block_device {
-    volume_size = 15 
+    volume_size = 12 
     volume_type = "gp3"
     encrypted   = true
   }
